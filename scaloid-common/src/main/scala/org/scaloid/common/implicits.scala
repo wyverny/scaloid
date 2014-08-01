@@ -58,6 +58,7 @@ private[scaloid] class ResourceConversion(val id: Int)(implicit context: Context
   @inline def r2StringArray  : Array[String]       = context.getResources.getStringArray(id)
   @inline def r2Drawable     : Drawable            = context.getResources.getDrawable(id)
   @inline def r2Movie        : Movie               = context.getResources.getMovie(id)
+  @inline def r2Color        : Int                 = context.getResources.getColor(id)
 }
 
 trait ConversionImplicits {
